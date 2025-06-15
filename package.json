@@ -1,6 +1,6 @@
 {
   "name": "structurex",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Framework‑agnostic UI design‑system builder (Atomic Design, containers/UI, hooks, presenters)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
