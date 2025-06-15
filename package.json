@@ -1,7 +1,7 @@
 {
   "name": "structurex",
-  "version": "1.4.0",
-  "description": "Framework‑agnostic UI design‑system builder (Atomic Design, containers/UI, hooks, presenters)",
+  "version": "0.1.0",
+  "description": "Framework agnostic UI design system builder (Atomic Design, containers/UI, hooks, presenters)",
   "main": "dist/index.js",
   "bin": {
     "structurex": "dist/cli/index.js"
