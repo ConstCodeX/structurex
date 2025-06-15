@@ -16,7 +16,9 @@ export default defineConfig([
       'cli/plopfile': 'src/cli/plopfile.ts',
     },
     outDir: 'dist',
-    format: ['cjs', 'esm'],
-    dts: true,
+    format: ['cjs'],
+    bundle: true,
+    external: [],
+    platform: 'node',
   },
 ]);
