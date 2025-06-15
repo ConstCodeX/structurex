@@ -31,12 +31,6 @@ const TIERS = {
 type TierKey = keyof typeof TIERS;
 
 export = function (plop: NodePlopAPI): void {
-  /* ------------------------------------------------------------------------ /
-  / Helpers para usar en las .hbs                                            /
-  / ------------------------------------------------------------------------ */
-  plop.setHelper('folder', (tier: TierKey) => TIERS[tier].folder);
-  plop.setHelper('suffix', (tier: TierKey) => TIERS[tier].suffix);
-  plop.setHelper('base', (tier: TierKey) => TIERS[tier].base);
 
   /* ------------------------------------------------------------------------ /
   / COMPONENT GENERATOR                                                      /
