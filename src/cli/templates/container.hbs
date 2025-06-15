@@ -1,0 +1,17 @@
+import { ContainerComponent } from 'structurex';
+import { {{pascalCase name}}Props, {{pascalCase name}} } from './{{pascalCase name}}.{{suffix}}';
+
+export interface {{pascalCase name}}State {}
+
+export class {{pascalCase name}}Container
+  extends ContainerComponent<{{pascalCase name}}State, {{pascalCase name}}Props> {
+
+  protected getInitialState(): {{pascalCase name}}State {
+    return {};
+  }
+
+  public render() {
+    const view = new {{pascalCase name}}(this.props);
+    return view.render();
+  }
+}

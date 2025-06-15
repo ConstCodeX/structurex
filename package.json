@@ -1,0 +1,48 @@
+{
+  "name": "structurex",
+  "version": "1.0.0",
+  "description": "Framework‑agnostic UI design‑system builder (Atomic Design, containers/UI, hooks, presenters)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "packages/eslint-config",
+    "README.md"
+  ],
+  "bin": {
+    "structurex": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/**/*.ts --format esm,cjs --dts --out-dir dist --clean",
+    "generate": "structurex component",
+    "prepare": "npm run build"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    },
+    "./cli": "./dist/cli/index.js"
+  },
+  "dependencies": {
+    "plop": "4.0.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "9.0.8",
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0"
+  },
+  "author": {
+    "name": "Víctor Larco",
+    "email": "victorlarcob@gmail.com",
+    "url": "https://github.com/ConstCodeX"
+  },
+  "keywords": [
+    "ui",
+    "atomic-design",
+    "framework-agnostic",
+    "clean-architecture",
+    "typescript"
+  ],
+  "license": "MIT"
+}
