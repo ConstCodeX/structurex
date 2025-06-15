@@ -7,7 +7,7 @@
     "structurex": "dist/cli/index.js"
   },
   "scripts": {
-    "build": "tsup && cp -R src/cli/templates dist/cli/templates",
+    "build": "tsup && cp -R src/cli/templates dist/cli",
     "generate": "structurex component",
     "prepare": "npm run build"
   },
