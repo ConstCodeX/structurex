@@ -1,0 +1,19 @@
+import { {{base}} } from 'structurex';
+import type { {{pascalCase name}}Props } from './types';
+
+export class {{pascalCase name}}{{base}} extends {{base}}<{{pascalCase name}}Props> {
+  constructor(props: {{pascalCase name}}Props) {
+    super(props);
+  }
+
+  public render() {
+    return (
+      <button
+        className="w-39 rounded-4xl bg-blue-800 text-white h-8"
+        onClick={this.props.onClick}
+      >
+        {this.props.label}
+      </button>
+    );
+  }
+}

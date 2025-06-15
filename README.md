@@ -113,18 +113,7 @@ Your editor will now warn if:
 - A **hook** lives in `atoms/`.
 - Any layer breaks the dependency rule defined by Atomic Design.
 
-Publishing workflow:
-
-1. Update version in `package.json`.
-2. `npm publish --access public`.
-
-The `prepare` script ensures a fresh build before publishing or when installed straight from Git.
-
 ---
-
-## 7 · Roadmap / Contributing
-
-\* Wrapper generators for React, Vue, Solid. \* Storybook preset. \* More lint rules (naming conventions, file limits).
 
 Contributions welcome! Open an issue or PR on GitHub.
 

@@ -1,31 +1,32 @@
 {
   "name": "structurex",
-  "version": "1.0.0",
-  "description": "Framework‑agnostic UI design‑system builder (Atomic Design, containers/UI, hooks, presenters)",
+  "version": "0.2.0",
+  "description": "Framework agnostic UI design system builder (Atomic Design, containers/UI, hooks, presenters)",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "packages/eslint-config",
-    "README.md"
-  ],
   "bin": {
     "structurex": "dist/cli/index.js"
   },
   "scripts": {
-    "build": "tsup src/**/*.ts --format esm,cjs --dts --out-dir dist --clean",
+    "build": "tsup && cp -R src/cli/templates dist/cli/templates",
     "generate": "structurex component",
     "prepare": "npm run build"
   },
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
     },
-    "./cli": "./dist/cli/index.js"
+    "./cli": "./dist/cli/index.js",
+    "./eslint-config": "./packages/eslint-config/index.js"
   },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "packages/eslint-config",
+    "README.md"
+  ],
   "dependencies": {
-    "plop": "4.0.1"
+    "plop": "3.1.2"
   },
   "devDependencies": {
     "@types/inquirer": "9.0.8",

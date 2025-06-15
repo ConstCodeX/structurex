@@ -1,0 +1,12 @@
+import { Presenter } from 'structurex';
+
+export interface {{pascalCase name}}Dto {/* … */}
+export interface {{pascalCase name}}ViewModel {/* … */}
+
+export class {{pascalCase name}}Presenter
+  extends Presenter<{{pascalCase name}}Dto, {{pascalCase name}}ViewModel> {
+
+  public map(dto: {{pascalCase name}}Dto): {{pascalCase name}}ViewModel {
+    return {/* … */} as {{pascalCase name}}ViewModel;
+  }
+}
