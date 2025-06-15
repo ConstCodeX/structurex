@@ -1,6 +1,6 @@
 {
   "name": "structu-rex",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Framework agnostic UI design system builder (Atomic Design, containers/UI, hooks, presenters)",
   "main": "dist/index.js",
   "bin": {
