@@ -30,7 +30,7 @@ const TIERS = {
 
 type TierKey = keyof typeof TIERS;
 
-export default function (plop: NodePlopAPI): void {
+export = function (plop: NodePlopAPI): void {
   /* ------------------------------------------------------------------------ /
   / Helpers para usar en las .hbs                                            /
   / ------------------------------------------------------------------------ */

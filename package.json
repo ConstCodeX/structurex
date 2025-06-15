@@ -1,5 +1,5 @@
 {
-  "name": "structurex",
+  "name": "structu-rex",
   "version": "0.1.0",
   "description": "Framework agnostic UI design system builder (Atomic Design, containers/UI, hooks, presenters)",
   "main": "dist/index.js",
